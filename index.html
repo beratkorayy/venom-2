@@ -70,6 +70,10 @@
                   <img src="assets/img/kask.png" alt="KASK">
                 </div>
               </div>
+              <div class="middle">
+                <div class="mouse">
+                </div>
+              </div>
             </li>
             <li class="l-section section">
               <div class="work">
@@ -181,7 +185,7 @@
             <li class="l-section section">
               <div class="hire">
                 <h2>Ailemize Katılmak İster Misiniz?</h2>
-                <!-- <ul>
+                <ul class="social-media">
                   <li class="wp-btn">
                     <a href="https://chat.whatsapp.com/HhvemVKrJIF4HOeBUjAOMs" target="_blank">Whatsapp
                       Kanalımız</a>
@@ -189,29 +193,30 @@
                   <li class="wp-btn">
                     <a href="https://chat.whatsapp.com/HhvemVKrJIF4HOeBUjAOMs" target="_blank">İnstagram Sayfamız</a>
                   </li>
-                </ul> -->
-                <form action="https://formspree.io/f/mwkdjoad" method="POST">
-                  <table>
-                    <tr>
-                      <td>Ad, Soyad:</td>
-                      <td><input type="text" name="adsoyad" /></td>
-                    </tr>
-                    <tr>
-                      <td>E-Posta:</td>
-                      <td><input type="text" name="email" /></td>
-                    </tr>
-                    <tr>
-                      <td>Konu:</td>
-                      <td><input type="text" name="konu" /></td>
-                    </tr>
-                    <tr>
-                      <td>Mesaj:</td>
-                      <td><textarea name="mesaj" style="width:300px;height:70px"></textarea></td>
-                    </tr>
-                    <tr>
-                      <td colspan="2"><button type="submit">Send</button></td>
-                    </tr>
-                  </table>
+                </ul>
+                <form class="work-request" action="https://formspree.io/f/mwkdjoad" method="POST">
+                  <h2>Bizimle İletişime Geçin</h2>
+                  <div class="work-request--information">
+                    <div class="information-name">
+                      <input id="name" type="text" name="adsoyad" spellcheck="false">
+                      <label for="name">Ad Soyad</label>
+                    </div>
+                    <div class="information-email">
+                      <input id="email" type="email" name="email" spellcheck="false">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <div class="work-request--information">
+                    <div class="information-name">
+                      <input id="konu" type="text" name="konu" spellcheck="false">
+                      <label for="konu">Konu</label>
+                    </div>
+                    <div class="information-email">
+                      <textarea id="mesaj" name="mesaj" spellcheck="false"></textarea>
+                      <label for="mesaj">Mesaj</label>
+                    </div>
+                  </div>
+                  <input type="submit" value="Gönder">
                 </form>
               </div>
             </li>
