@@ -1379,6 +1379,7 @@ tr:nth-child(4) td {
     -webkit-box-align: center;
     align-items: center;
     color: rgb(255, 255, 255);
+    margin-top: 60px;
 }
 
 .work-request input[type="submit"] {
@@ -1501,11 +1502,20 @@ tr:nth-child(4) td {
 }
 
 .work-request--information input:focus+label,
-.work-request--information input.has-value+label {
+.work-request--information input.has-value+label,
+.information-email textarea#mesaj:focus+label,
+.information-email textarea.has-value+label {
     top: -15px;
     font-size: 14px;
 }
-
+.information-email textarea#mesaj:focus-visible,
+.information-email textarea#mesaj:focus{
+    outline: none;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+.social-media{
+    padding: 0;
+}
 @media (max-width: 767px) {
     .work-request--options {
         -webkit-box-orient: horizontal;
@@ -1535,6 +1545,15 @@ tr:nth-child(4) td {
 }
 
 @media (max-width: 600px) {
+    .work-request{
+        margin-top: 30px;
+    }
+    .hire h2{
+        font-size: 20px;
+    }
+    .hire .wp-btn{
+        height: 45px;
+    }
     .work-request--options label {
         width: 150px;
         margin-bottom: 15px;
@@ -1685,4 +1704,52 @@ tr:nth-child(4) td {
 
 .outer-nav li.is-vis:nth-child(5) {
     transition-delay: 0.16s;
+}
+
+.middle {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.mouse {
+    width: 45px;
+    height: 70px;
+    border: 4px solid #333333;
+    border-radius: 60px;
+}
+.mouse::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 30px;
+    background-color: #333;   
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 10px;
+    }
+    to {
+        opacity: 0;
+        top: 50px;
+    }
+}
+.information-email textarea#mesaj {
+    width: 100%;
+    padding: 0px 0px 5px;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    border-radius: 0px;
+    height: 50px;
 }
