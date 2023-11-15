@@ -1278,7 +1278,7 @@ body {
 .hire ul {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 15px;
     align-items: center;
     text-align: center;
 }
@@ -1566,12 +1566,24 @@ tr:nth-child(4) td {
 
     .work-request--information {
         margin-bottom: 30px;
+        display: block;
     }
 
     .work-request--information .information-name,
     .work-request--information .information-email {
         height: 40px;
         font-size: 24px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .work-request .mobile-margn{
+        margin-bottom: 0px !important;
+    }
+    .middle{
+        bottom: 6% !important;
+    }
+    .work-request input[type="submit"] {
+        line-height: 45px;
     }
 }
 
